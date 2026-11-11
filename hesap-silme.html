@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lyxo Studio · Hesap Silme</title>
+<meta name="description" content="Kelime Labirenti (Lyxo Studio) oyuncu hesabı ve verilerinin silinmesi.">
+<link rel="icon" href="kelime-labirenti.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --zemin:#170F45; --lila:#B3A6FF; --mor:#6B5CE6; --yazi:#2a2350; --soluk:#6b6590; --kirmizi:#E8434A; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:84px; }
+  body { margin:0; background:var(--zemin); color:var(--yazi); line-height:1.65;
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif; }
+  .baslik-cubugu { position:sticky; top:0; z-index:5; background:rgba(23,15,69,.92); backdrop-filter:blur(8px);
+                   border-bottom:1px solid rgba(255,255,255,.08); }
+  .ust { max-width:860px; margin:0 auto; padding:12px 16px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+  .logo { display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff; }
+  .mini { display:flex; gap:5px; }
+  .mini span { width:32px; height:32px; border-radius:9px; display:grid; place-items:center; color:#fff;
+               font: 800 19px/1 "Baloo 2", Inter, sans-serif; padding-top:2px; box-shadow:0 4px 0 rgba(0,0,0,.28); }
+  .logo b { font: 800 14px/1 "Baloo 2", Inter, sans-serif; letter-spacing:5px; color:var(--lila); }
+  nav { display:flex; gap:6px; flex-wrap:wrap; margin-left:auto; }
+  nav a { color:#fff; text-decoration:none; font-size:14px; font-weight:600; padding:6px 12px; border-radius:999px;
+          background:rgba(255,255,255,.08); }
+  nav a:hover { background:rgba(255,255,255,.16); }
+  nav a.aktif { background:var(--mor); }
+
+  .kap { max-width:860px; margin:0 auto; padding:24px 16px 48px; }
+  .bolum { background:#fff; border-radius:22px; padding:28px 24px; margin-top:20px; }
+  .bolum h1 { font: 800 30px/1.15 "Baloo 2", Inter, sans-serif; color:var(--zemin); margin:0; }
+  .tarih { color:var(--soluk); font-size:14px; margin:4px 0 0; }
+  h2 { font-size:15px; letter-spacing:.06em; text-transform:uppercase; color:var(--mor); margin:28px 0 6px; }
+  ol, ul { padding-left:20px; margin:6px 0; }
+  li { margin:5px 0; }
+  a { color:var(--mor); }
+  .uc { list-style:none; padding:0; display:grid; gap:8px; }
+  .uc li { background:#f4f1ff; border-radius:12px; padding:10px 14px; margin:0; }
+  .yol { background:#f4f1ff; border-radius:8px; padding:1px 8px; font-weight:700;
+         box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+  .uyari { border-left:5px solid var(--kirmizi); background:#fff1f1; border-radius:10px; padding:10px 14px; margin-top:24px; }
+  .dil-ayrac { color:#fff; text-align:center; margin:40px 0 0; font: 800 22px/1.2 "Baloo 2", Inter, sans-serif; }
+  .dil-ayrac small { display:block; color:var(--lila); font: 600 14px/1.4 system-ui, sans-serif; }
+  footer { text-align:center; color:var(--lila); font-size:14px; margin-top:36px; }
+  footer a { color:#fff; }
+</style>
+</head>
+<body>
+<div class="baslik-cubugu">
+  <div class="ust">
+    <a class="logo" href="#hesap-silme">
+      <span class="mini"><span style="background:#FFC23D;color:#3A2A00">L</span><span style="background:#3CC86E">Y</span><span style="background:#FFF6E5;color:#3A2A8A">X</span><span style="background:#6B5CE6">O</span></span>
+      <b>STUDIO</b>
+    </a>
+    <nav>
+      <a class="aktif" href="#hesap-silme">Türkçe</a>
+      <a href="#en">English</a>
+    </nav>
+  </div>
+</div>
+
+<div class="kap">
+
+<!-- ===================== TÜRKÇE ===================== -->
+<section class="bolum" id="hesap-silme">
+  <h1>Hesap ve Veri Silme</h1>
+  <p class="tarih">Son güncelleme: 11 Kasım 2026</p>
+
+  <p>Bu sayfa, Lyxo Studio tarafından geliştirilen <b>Kelime Labirenti</b> oyunundaki oyuncu hesabının ve buna bağlı verilerin nasıl silineceğini anlatır.</p>
+
+  <h2>Oyun telefonunda yüklüyse</h2>
+  <ol>
+    <li>Oyunu aç, ana menünün sağ üstündeki <b>Ayarlar</b> (dişli) simgesine dokun.</li>
+    <li><span class="yol">Diğer → Kişisel veri isteği</span> satırına dokun.</li>
+    <li><b>İlerlememi ve Verilerimi Sil</b> düğmesine dokun.</li>
+    <li>Uyarıyı okuyup silmeyi onayla. Hesabın ve verilerin hemen silinir, oyun baştan başlar.</li>
+  </ol>
+
+  <h2>Oyun yüklü değilse</h2>
+  <ol>
+    <li><a href="mailto:lyxostudio@gmail.com?subject=Hesap%20silme%20iste%C4%9Fi">lyxostudio@gmail.com</a> adresine <b>"Hesap silme isteği"</b> konulu bir e-posta gönder.</li>
+    <li>E-postaya oyundaki kullanıcı adını ya da Kullanıcı ID'ni yaz. Bilmiyorsan ve hesabını Google Play Games'e bağladıysan, Google hesabının e-posta adresini yazman yeterli.</li>
+    <li>İsteğini aldığımızı e-postayla bildiririz. Hesabın ve verilerin en geç <b>30 gün</b> içinde silinir.</li>
+  </ol>
+
+  <h2>Silinen veriler</h2>
+  <ul class="uc">
+    <li>Oyuncu hesabın ve Kullanıcı ID'n</li>
+    <li>Kullanıcı adın (takma adın) ve avatarın</li>
+    <li>Bulut kaydın: bölüm ilerlemen, altın, ipuçları, avatarların, başarıların ve istatistiklerin</li>
+    <li>Sıralamalardaki puanın ve adın</li>
+    <li>Arkadaş listen, gönderdiğin ve aldığın arkadaşlık istekleri</li>
+    <li>Google Play Games hesabınla olan bağlantı</li>
+  </ul>
+
+  <h2>Silinmeyen veya bir süre saklanan veriler</h2>
+  <ul>
+    <li><b>Satın almalar:</b> Gerçek parayla yaptığın satın almaların kayıtları Google Play tarafından tutulur ve Google'ın kendi politikasına göre saklanır. "Reklamsız" satın alması Google hesabına bağlıdır; oyunu yeniden yüklersen <i>Mağaza → Satın alımları geri yükle</i> ile geri gelir.</li>
+    <li><b>Reklam ortakları:</b> Reklam iş ortaklarımızın topladığı reklam kimliği gibi veriler, o şirketlerin kendi gizlilik politikalarına göre işlenir. Reklam kimliğini telefonunun <b>Ayarlar → Google → Reklamlar</b> bölümünden sıfırlayabilir ya da silebilirsin.</li>
+    <li><b>Destek yazışmaları:</b> Silme isteğin için yazıştığımız e-postalar, işlem tamamlandıktan sonra en geç 90 gün içinde silinir.</li>
+    <li><b>Telefondaki kayıt:</b> Oyunu telefonundan kaldırdığında telefondaki kayıt da silinir.</li>
+  </ul>
+
+  <h2>Yalnızca bazı verilerini silmek</h2>
+  <p>Hesabını korurken yalnızca belirli verilerinin (ör. sıralamadaki puanın ve adın ya da bulut kaydın) silinmesini istiyorsan, aynı adrese hangi verilerin silinmesini istediğini yazarak e-posta gönderebilirsin. İsteğin en geç 30 gün içinde yerine getirilir.</p>
+
+  <p class="uyari">Hesap silme işlemi geri alınamaz. Silinen ilerleme, altın ve avatarlar geri getirilemez.</p>
+
+  <p>Gizlilik politikamızın tamamı için: <a href="gizlilik.html">Gizlilik Politikası</a></p>
+</section>
+
+<p class="dil-ayrac">English<small>Account and data deletion</small></p>
+
+<!-- ===================== ENGLISH ===================== -->
+<section class="bolum" id="en" lang="en">
+  <h1>Account and Data Deletion</h1>
+  <p class="tarih">Last updated: November 11, 2026</p>
+
+  <p>This page explains how to delete your player account and related data in <b>Kelime Labirenti</b>, a game developed by Lyxo Studio.</p>
+
+  <h2>If the game is installed</h2>
+  <ol>
+    <li>Open the game and tap the <b>Settings</b> (gear) icon at the top right of the main menu.</li>
+    <li>Tap <span class="yol">Diğer (Other) → Kişisel veri isteği (Personal data request)</span>.</li>
+    <li>Tap <b>İlerlememi ve Verilerimi Sil</b> (Delete my progress and data).</li>
+    <li>Read the warning and confirm. Your account and data are deleted immediately and the game starts from the beginning.</li>
+  </ol>
+
+  <h2>If the game is not installed</h2>
+  <ol>
+    <li>Email <a href="mailto:lyxostudio@gmail.com?subject=Account%20deletion%20request">lyxostudio@gmail.com</a> with the subject <b>"Account deletion request"</b>.</li>
+    <li>Include your in-game username or User ID. If you don't know it and you linked Google Play Games, your Google account's email address is enough.</li>
+    <li>We will confirm by email that we received your request. Your account and data will be deleted within <b>30 days</b>.</li>
+  </ol>
+
+  <h2>Data that is deleted</h2>
+  <ul class="uc">
+    <li>Your player account and User ID</li>
+    <li>Your username (nickname) and avatar</li>
+    <li>Your cloud save: level progress, coins, hints, avatars, achievements and statistics</li>
+    <li>Your scores and name on the leaderboards</li>
+    <li>Your friends list and sent/received friend requests</li>
+    <li>The link to your Google Play Games account</li>
+  </ul>
+
+  <h2>Data that is not deleted or is kept for a period</h2>
+  <ul>
+    <li><b>Purchases:</b> Records of real-money purchases are kept by Google Play under Google's own policies. The "Reklamsız" (No Ads) purchase is tied to your Google account and can be recovered after reinstalling via <i>Shop → Restore purchases</i>.</li>
+    <li><b>Advertising partners:</b> Data such as the advertising ID collected by our advertising partners is processed under those companies' own privacy policies. You can reset or delete your advertising ID in your phone's <b>Settings → Google → Ads</b>.</li>
+    <li><b>Support messages:</b> Emails about your deletion request are deleted within 90 days after the request is completed.</li>
+    <li><b>On your device:</b> The save on your phone is removed when you uninstall the game.</li>
+  </ul>
+
+  <h2>Deleting only some of your data</h2>
+  <p>If you want to keep your account but delete specific data (for example your leaderboard score and name, or your cloud save), email the same address describing which data you want deleted. Your request will be completed within 30 days.</p>
+
+  <p class="uyari">Account deletion cannot be undone. Deleted progress, coins and avatars cannot be restored.</p>
+
+  <p>Full privacy policy: <a href="gizlilik.html#privacy">Privacy Policy</a></p>
+</section>
+
+<footer>
+  <p><a href="mailto:lyxostudio@gmail.com">lyxostudio@gmail.com</a></p>
+  <p>© 2026 Lyxo Studio</p>
+</footer>
+</div>
+</body>
+</html>
